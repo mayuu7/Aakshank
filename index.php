@@ -1,0 +1,196 @@
+<html>
+<head>
+<title>Aakshank</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<!--CSS Style-->
+<style>
+
+#navbar_div{
+	padding-bottom:5px;
+	opacity:0.5;
+	width:100%;
+	background:linear-gradient(to right,#f7982c,#bc6501);
+	
+}
+.zoomin img{
+	height:150px;
+	width:150px;
+	-webkit-transition:all 1s ease;
+	-moz-transition:all 1s ease;
+	transition:all 1s ease;
+}
+.zoomin img:hover{
+	width:200px;
+	height:200px;
+	
+}
+</style>
+
+<script>
+$(document).ready(function(){
+	$('#myCarousel').carousel({
+		interval: 3000
+	})
+	$(".fadein").hide();
+	
+
+});
+//fade in of events
+for(var i=900;i<4500;i=i+750)
+	{	
+		$(window).scroll(function() {
+		if ($(this).scrollTop() > 650) {
+			$(".fadein").fadeIn(i);
+		}
+		});
+	}
+
+
+
+</script>
+<body>
+		<!--navigation bar-->
+		<nav class="nav navbar-default">
+			<div class="container-fluid" id="navbar_div">
+				<div class="navbar-header">
+					<a href="index.php" class="navbar-brand"><img src="AakshankLogo.png" alt="Logo" width="150px"/></a>
+				</div>
+				<div>
+				<ul class="nav navbar-nav navbar-right" style="padding-top:5px">
+				<li style="padding-right:50px;font-family:Courier New;font-size:20px;"><a href="index.php" style="font-weight:bold;color:black">Home</a></li>
+				<li style="padding-right:50px;font-family:Courier New;font-size:20px"><a href="#" style="font-weight:bold;color:black">Events</a></li>
+				<li style="padding-right:50px;font-family:Courier New;font-size:20px"><a href="#" style="font-weight:bold;color:black">About Us</a></li>
+				<li style="padding-right:50px;font-family:Courier New;font-size:20px"><a href="#" style="font-weight:bold;color:black">Accomodation</a></li>
+				<li style="padding-right:50px;font-family:Courier New;font-size:20px"><a href="#" style="font-weight:bold;color:black">Contact</a></li>
+				</div>
+			</div>
+		</nav>
+		
+		<section>
+			<!--Aakshank Poster-->
+			<div class="container-fluid">
+				<img src="lastYr/ComingSoon.jpg" alt="Aakshank Poster" class="container-fluid" width="100%" height="500px" style="background-repeat:no-repeat"/>
+			</div>
+			</br>
+			</br>
+			
+			<!--carousel-->
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active" style="background-color:gray"></li>
+					<li data-target="#myCarousel" data-slide-to="1" style="background-color:black"></li>
+					<li data-target="#myCarousel" data-slide-to="2" style="background-color:white"></li>
+					<li data-target="#myCarousel" data-slide-to="3" style="background-color:gold"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="lastYr/aakshankSamplePoster.jpg" alt="Some Image" height="200px;" width="100%"/>
+					</div>
+					<div class="item">
+						<img src="lastYr/aakshankSamplePoster.jpg" alt="Some Image" height="200px;" width="100%"/>
+					</div>
+					<div class="item">
+						<img src="lastYr/aakshankSamplePoster.jpg" alt="Some Image" height="200px;" width="100%"/>
+					</div>
+					<div class="item">
+						<img src="lastYr/aakshankSamplePoster.jpg" alt="Some Image" height="200px;" width="100%"/>
+					</div>
+				</div>
+				<!-- Left and right controls -->
+				  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				  </a>
+			</div>
+			
+			<!--Events Info-->
+			<div class="container-fluid">
+			
+			</br>
+			<h1 class="fadein" style="text-align:center;font-size:40px">HIGHLIGHTS</h1>
+			<div class="col-md-6 fadein">
+					<div class="zoomin">
+					<img src="lastYr/ComingSoon.jpg" alt="Concert" class="img-circle" width="100px">
+					</div>
+					<h2>Concert<span class="caret"></h2>
+					<h4> content for concert</h4>
+			</div>
+			</br></br></br></br></br></br></br>
+			<div class="col-md-6 fadein">
+					<div class="zoomin">
+					<img src="lastYr/ComingSoon.jpg" class="img-circle" width="100px">
+					</div>
+					<h2>Day Events<span class="caret"></h2>
+					<h4> content for day events</h4>
+			</div>
+			</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+			<div class="col-md-6 fadein">
+					<div class="zoomin">
+					<img src="lastYr/ComingSoon.jpg" class="img-circle" width="100px">
+					</div>
+					<h2>Mridaksh<span class="caret"></h2>
+					<h4> content for mridaksh</h4>
+			</div>
+			</br></br></br></br></br></br></br></br>
+			<div class="col-md-6 fadein">
+					<div class="zoomin">
+					<img src="lastYr/ComingSoon.jpg" class="img-circle" width="100px">
+					</div>
+					<h2>Competitions<span class="caret"></h2>
+					<h4> content for competitions</h4>
+			</div>
+			</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+			<div class="col-md-6 fadein">
+					<div class="zoomin">
+					<img src="lastYr/ComingSoon.jpg" class="img-circle" width="100px">
+					</div>
+					<h2>Stunt Mania<span class="caret"></h2>
+					<h4> content for Stunt mania</h4>
+					
+			</div>
+			
+			
+		</div>
+			
+			
+	</section>
+	</br></br></br></br></br></br>
+	
+	<!--bottom navigation-->
+	<footer>
+		<nav class="nav navbar-default" style="z-index:1">
+			
+			<div class="container-fluid" style="background:linear-gradient(to right,#f4b642,#c17f03);">
+				<div>
+					<ul class="nav navbar-nav">
+						<li style="padding-top:20px;font-family:Courier New;font-size:20px;color:#000000">Follow Us :<li>
+						<li><a href="#" style="float:left"><img src="fbLogo.png" class="img-circle" width="30px"></a></li>
+						<li><a href="#" style="float:left"><img src="twitterLogo.png" class="img-circle" width="30px"></a></li>
+						<li><a href="#" style="float:left"><img src="Instagram.png" class="img-circle" width="30px"></a></li>
+						
+							
+					</ul>	
+					<ul class="nav navbar-nav navbar-right">
+							<li><a href="#" style="font-family:Courier New;font-size:20px;color:#000000;padding-top:20px">&copy;Aakshank,Iet DAVV</a></li>
+					</ul>
+					
+				</div>
+			</div>	
+		</nav>	
+	</footer>
+
+
+
+
+</body>
+
+</html>
